@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="https://kit.fontawesome.com/f6545ee271.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form class="input-box">
+                <i class="fa-solid fa-list-check list-icon"></i>
+                <input type="text" name="input-text" class="input-text" placeholder="Type your todo list" required />
+                <button class="input-submit"><i class="fa-solid fa-circle-plus"></i></button>
+            </form>
+            <div class="task-stats">
+                <button class="complete-all-task stats-text"> <i class="fa-solid fa-check-double tick-icon"></i>
+                    Complete all tasks</button>
+                <button class="clear-completed stats-text">clear Completed</button>
+            </div>
+            <div class="list-box">
+                <div class="empty-box"><i class="fa-sharp fa-solid fa-ghost"></i> Oops! List is Empty</div>
+            </div>
+            <div class="task-counter">
+                <span class="task-count"><b class="task-length"> </b>tasks left</span>
+                <div class="task-filter">
+                    <button class="  all-task btn active">All</button>
+                    <button class="  uncomepleted-task btn ">Uncompleted</button>
+                    <button class="  completed-task btn">Completed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
